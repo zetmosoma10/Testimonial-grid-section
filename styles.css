@@ -28,6 +28,11 @@ body {
   background-color: var(--Light-grayish-blue);
 }
 
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
 h2 {
   font-size: 2rem;
   line-height: auto;
@@ -37,7 +42,7 @@ h2 {
 /* Card */
 
 .card {
-  width: 100%;
+  width: 400px;
   border-radius: 8px;
   box-shadow: 40px 30px 50px -47px #48556a;
   padding: 3.2rem;
@@ -97,4 +102,40 @@ h2 {
   color: var(--Very-dark-grayish-blue);
 }
 
-/* .card--white; */
+@media screen and (min-width: 1110px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+  gap: 2.4rem 3rem;
+  height: auto;
+  justify-items: center;
+}
+
+@media screen and (min-width: 1110px) {
+  .grid-1x2 {
+    grid-template-columns: 75% auto;
+    grid-template-rows: auto;
+  }
+  .grid-2x3 {
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .item-1 {
+    grid-column: 1 / span 2;
+  }
+
+  .item-4 {
+    grid-column: 2 / span 2;
+  }
+
+  .item-5 {
+    height: 100%;
+  }
+}

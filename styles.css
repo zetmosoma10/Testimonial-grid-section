@@ -25,6 +25,7 @@ html {
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 1.3rem;
+  background-color: var(--Light-grayish-blue);
 }
 
 h2 {
@@ -38,7 +39,9 @@ h2 {
 .card {
   width: 100%;
   border-radius: 8px;
+  box-shadow: 40px 30px 50px -47px #48556a;
   padding: 3.2rem;
+  color: var(--White);
 }
 
 .card__image {
@@ -71,9 +74,27 @@ h2 {
 
 .card--blue {
   background-color: var(--Moderate-violet);
-  color: var(--White);
 }
 
 .card--blue .card__image {
   border: 2px solid var(--Light-gray);
 }
+
+.card--navy {
+  background: var(--Very-dark-blackish-blue);
+}
+
+.card--navy .card__image {
+  border: 2px solid var(--Moderate-violet);
+}
+
+.card--grayish {
+  background: var(--Very-dark-grayish-blue);
+}
+
+.card--white {
+  background: var(--White);
+  color: var(--Very-dark-grayish-blue);
+}
+
+/* .card--white; */

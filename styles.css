@@ -39,6 +39,11 @@ h2 {
   font-weight: 600;
 }
 
+.mark-heading {
+  position: relative;
+  z-index: 3;
+}
+
 /* Card */
 
 .card {
@@ -117,7 +122,20 @@ h2 {
   justify-items: center;
 }
 
+.item-1 {
+  position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  right: 2rem;
+  top: 0;
+}
+
 @media screen and (min-width: 1110px) {
+  .quote-icon {
+    right: 8rem;
+  }
   .grid-1x2 {
     grid-template-columns: 75% auto;
     grid-template-rows: auto;

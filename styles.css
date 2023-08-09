@@ -1,0 +1,79 @@
+/* font-family:  */
+
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Neutral */
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: auto;
+  font-weight: 600;
+}
+
+/* Card */
+
+.card {
+  width: 100%;
+  border-radius: 8px;
+  padding: 3.2rem;
+}
+
+.card__image {
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  margin-right: 1.7rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  margin-bottom: 0.4rem;
+  margin-top: 0;
+}
+
+.status {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.card__paragraph {
+  opacity: 0.7;
+}
+
+.card--blue {
+  background-color: var(--Moderate-violet);
+  color: var(--White);
+}
+
+.card--blue .card__image {
+  border: 2px solid var(--Light-gray);
+}
